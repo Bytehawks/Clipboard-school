@@ -1,0 +1,83 @@
+\documentclass[a4paper,11pt,abstracton,titlepage]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{eurosym}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{pdfpages}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% die Vorgaben der Prüfungsarbeit... etwas hässlich
+\geometry{a4paper,left=25mm,right=25mm, top=3cm, bottom=3cm}
+\parindent 0pt
+
+
+\title{Clipboard-Manager\\Pflichtenheft}
+\author{Name1, Name2, Name3\\ und Name4} 
+\date{15. Mai 2012}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+% die Vorgaben der Prüfungsarbeit... etwas hässlich
+\setlength{\parskip}{1em}
+\setcounter{page}{1}
+\section{Zielbestimmungen}
+Ziel ist es einen Clipboardmanager für den Projektunterricht in der Berufsschule zu entwickeln. Dieses Ziel muss in diesem Block erreicht werden.
+Dazu muss eine Dokumentation erstellt werden und am letzten Tag im Block abgegeben werden.
+Desweiteren muss eine Pr"asentation vorbereitet und gehalten werden. Die Pr"asentation muss am 25.05.2012 pr"asentiert werden.
+\subsection{Grenzkriterien}
+F"ur die Entwicklung muss Java\footnotesize{\texttrademark} \normalsize 6 verwendet werden. Ein Upgrade auf Java\footnotesize{\texttrademark} \normalsize 7 ist nicht geplant.
+Das Programm muss lauff"ahig sein, muss aber nicht vollst"andig implementiert sein. Sollten Teile nicht implementiert sein m"ussen diese in der Dokumentation erw"ahnt werden, damit dieses bei der Benotung ber"ucksichtig werden kann.
+\subsection{Wunschkriterien}
+Der Clipboardmanager kann duch Parser erweitert werden.
+Die Pr"asentation soll sich von den anderen Pr"asentationen abheben, daf"ur wird die Pr"asentation an die Vortagsart von Apple angelehnt. Daf"ur werden keine Aufz"ahlungspunkte verwendet. Einfache Bilder sind f"ur die Pr"asentaion zuverwenden und Themen am Besten auf eine eigene Folie.
+\subsection{Abgenzungskriterien}
+Diese Software soll nicht effektiv arbeiten, sondern nur funktionieren.
+F"ur eine bessere Entwicklung reicht die Zeit nicht aus. Es bedeutet nicht, dass dieses  Projekt "unbeachtet einfach gel"oscht wird. Dieses Projekt ist ein gutes Projekt um den Umgang mit Java\footnotesize{\texttrademark} \normalsize im Bezug auf Pluginsystem, Zwischenspeicherhandling und GUI-Programmierung zu lernen nicht mehr und auch nicht weniger. Ob das Projekt weitergef"uhrt wird ist noch nicht beschlossen.  
+\section{Produkteinsatz}
+Das fertige Produkt wird verwendet um das Arbeiten beim Kopieren von viel Text zu vereinfachen. Es wird verschiedene Parser geben, damit einzelene Einsatzgebiete abgedeckt sind.
+\subsection{Anwendungsbereiche}
+Ein Anwendungsbereich wird in der Entwicklung oder im Vertrieb sein, um das Kopieren von formatierten Text zu vereinfachen. 
+\subsection{Zielgruppe}
+Zielgruppe sind f"ur dieses Produkt sind Personen die viel Text kopieren m"ussen und dabei jedesmal Formatierung l"oschen oder "ahnliche Aufgaben durchf"uhren m"ussen.
+\section{Produktkonfiguration}
+F"ur das Produkt wird Java\footnotesize{\texttrademark} \normalsize 6 ben"otigt. Durch den Einsatz von Java\footnotesize{\texttrademark} \normalsize ist dieses Programm auf jedem Betriebssystem mit Java\footnotesize{\texttrademark} \normalsize lauff"ahig.
+\section{Benutzerschnittstelle}
+Die Benutzerschnittstelle besteht nur aus einer Konfigurationsoberfl"ache.
+In dieser Oberfl"ache kann der Benutzer Einstellungen vornehmen und sobald er diese "Ubernimmt arbeitet der Clipboardmanager selbstst"andig. 
+\section{Qualit"ats-Zielbestimmungen}
+Bei der Entwicklung wird nur darauf geachtet, dass das Programm lauff"ahig ist und die grundlegenden Aufgaben erledigt. Fehler in Parsern oder Plugins werden duch sp"atere Patches behoben.
+\section{Globale Testf"alle}
+Die Testf"alle betreffen nur das Grundprogramm und dann im Einzelnen die Parser. F"ur jeden Parser wird ein spezieller Test erstellt. Ein HTML-Stripper wird z.B. auf Funktionalit"at mit HTML Tags getestet.
+\section{Entwicklungs-Konfiguration}
+Die Entwicklungskonfiguration sieht etwas anders aus "uberwiegend wird auf einem Linux-System entwickelt mit OpenJDK oder der offiziellen Java\footnotesize{\texttrademark} \normalsize JDK.
+Auf einem Windows System wird auch entwickelt. Alle Softwareteile werden mit der Eclipse IDE entwickelt. 
+\section{Erg"anzungen}
+Die Software ist in mehere Teile unterteilt. Zum einen den Kernel (Core) mit den Grundfunktionalit"aten d.h. lesen/schreiben des Zwischenspeichers. Aufgebaut auf den Core ist die GUI nach der Schichtenarchitektur. \newline
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.7]{Schichtenarchitektur}
+\caption{Bild der geplanten Schichtenarchitektur}
+\end{figure}
+\newpage
+\section{Unterschriften}
+Mit Unterschrift dieses Pflichtenheft stimmen beide Parteien die in diesem Dokument aufgef"uhrten Bedinungen und Erf"ullungen zu. 
+\newline\newline
+\begin{figure}[htdp]
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\newline
+Auftraggeber (Schule) \newline
+\newline\newline
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\newline
+Auftragnehmer (Firm)\newline
+\end{figure}
+\end{document}
